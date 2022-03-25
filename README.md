@@ -49,6 +49,7 @@ $ ./bin/standalone.sh
 <div><img src="./src/img/02_add_realm.png" alt="drawing" width="800"/></div>
 
 <b>Create the OpenID client</b>
+
 name it `test-oidc-client` with Root URL: `http://localhost:3000`
 
 <div><img src="./src/img/03_clients.png" alt="drawing" width="800"/></div>
@@ -97,6 +98,7 @@ $ npm start
 ```
 
 If you access the application at `http://localhost:3000` you will be redirected to Keycloak's login page
+
 Type in the username and password and you will be redirected to the app
 
 <div><img src="./src/img/08_login.png" alt="drawing" width="800"/></div>
