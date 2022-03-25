@@ -45,24 +45,24 @@ $ ./bin/standalone.sh
 
 <b>Crete the Keycloak realm</b>
 
-<div><img src="./src/img/01_master_realm.png" alt="drawing" width="800"/></div>
-<div><img src="./src/img/02_add_realm.png" alt="drawing" width="800"/></div>
+<div><img src="./src/img/01_master_realm.png" alt="drawing" width="1000"/></div>
+<div><img src="./src/img/02_add_realm.png" alt="drawing" width="1000"/></div>
 
 <b>Create the OpenID client</b>
 
 name it `test-oidc-client` with Root URL: `http://localhost:3000`
 
-<div><img src="./src/img/03_clients.png" alt="drawing" width="800"/></div>
-<div><img src="./src/img/04_add_client.png" alt="drawing" width="800"/></div>
+<div><img src="./src/img/03_clients.png" alt="drawing" width="1000"/></div>
+<div><img src="./src/img/04_add_client.png" alt="drawing" width="1000"/></div>
 
 <b>Create realm user</b>
 
-<div><img src="./src/img/05_users.png" alt="drawing" width="800"/></div>
-<div><img src="./src/img/06_add_user.png" alt="drawing" width="800"/></div>
+<div><img src="./src/img/05_users.png" alt="drawing" width="1000"/></div>
+<div><img src="./src/img/06_add_user.png" alt="drawing" width="1000"/></div>
 
 <b>Set the user credentials</b>
 
-<div><img src="./src/img/07_uer_creds.png" alt="drawing" width="800"/></div>
+<div><img src="./src/img/07_uer_creds.png" alt="drawing" width="1000"/></div>
 
 ### Running the React Application
 
@@ -101,8 +101,8 @@ If you access the application at `http://localhost:3000` you will be redirected 
 
 Type in the username and password and you will be redirected to the app
 
-<div><img src="./src/img/08_login.png" alt="drawing" width="800"/></div>
+<div><img src="./src/img/08_login.png" alt="drawing" width="1000"/></div>
 
 Home page has the decoded `access_token` (claims) where the user's metadata & role information can be accessed
 
-<div><img src="./src/img/09_home_page.png" alt="drawing" width="800"/></div>
+<div><img src="./src/img/09_home_page.png" alt="drawing" width="1000"/></div>
