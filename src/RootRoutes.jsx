@@ -3,8 +3,9 @@ import React from "react";
 import {
   Route,
   BrowserRouter as Router,
-  Routes as Switch,
+  Routes,
   NavLink,
+  Navigate,
 } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -19,6 +20,11 @@ export default function () {
     marginRight: 5,
   };
 
+  const logoutStyle = {
+    fontSize: 15,
+    marginLeft: 10,
+  };
+
   return (
     <div style={{ padding: 10 }}>
       <Router>
@@ -31,17 +37,15 @@ export default function () {
         <span style={linkStyle}>
           <NavLink to="/claims">Claims</NavLink>
         </span>
-        <button
-          style={{ fontSize: 15, marginLeft: 10 }}
-          onClick={() => userMgr.signoutRedirect()}
-        >
+        <button style={logoutStyle} onClick={() => userMgr.signoutRedirect()}>
           Logout
         </button>
-        <Switch>
+        <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/user" element={<User />} />
           <Route exact path="/claims" element={<Claims />} />
-        </Switch>
+          <Route path="/*" element={<Navigate replace to="/" />} />
+        </Routes>
       </Router>
     </div>
   );
